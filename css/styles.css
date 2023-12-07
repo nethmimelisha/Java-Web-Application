@@ -1,0 +1,200 @@
+/* Global styles */
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'YourChosenFont', sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    max-height: 50px;
+}
+
+.navbar {
+    opacity: 0;
+    animation: fadeInNav 1s forwards;
+}
+
+@keyframes fadeInNav {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.logo-img {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.menu li a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    transform: scale(1.1);
+}
+
+.menu li:nth-child(3) a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu li:nth-child(3) a:hover {
+    transform: translateY(-5px);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.custom-search {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #7cb342;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    background-color: #65993c;
+}
+
+#searchBar, button {
+    transition: all 0.3s ease-in-out;
+}
+
+#searchBar:focus, button:hover {
+    transform: scale(1.1);
+}
+
+.background-transition {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('background-image.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 1s ease-in-out 0.5s;
+}
+
+.footer {
+    color: #7cb342;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #7cb342;
+}
+
+/* Contact Us styles */
+
+.contact-section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    color: #7cb342;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-section label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-section input,.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section .submit-btn {
+    background-color: #7cb342;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-section .submit-btn:hover {
+    background-color: #65993c;
+}
+
+/* Responsive adjustments for contact page */
+@media (max-width: 768px) {
+
+    .search-bar {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .background-image {
+        height: 30vh; /* Adjust the height for mobile version as needed */
+        margin-top: -550px;
+    }
+
+    .contact-section .container {
+        width: 100%;
+        padding: 0 15px; /* Add padding for better mobile layout */
+    }
+
+    .footer {
+        font-size: 14px; /* Adjust the footer font size for the contact page */
+    }
+}
