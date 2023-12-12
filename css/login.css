@@ -22,11 +22,23 @@ body, input{
     top:0;
     left:0;
 }
+
+.sign-signup{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%) ;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 form{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .title{
@@ -77,5 +89,34 @@ form{
 
 .btn:hover{
     background-color: #08e455;
+}
+.social-text{
+    padding: .7rem 0;
+    font-size: 1rem;
+
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+
+}
+.social-icon{
+    height: 46px;
+    width: 46px;
+    border: 1px solid  #333;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.social-icon:hover{
+    color: rgba(35, 180, 180, 0.496);
+    border-color: rgba(47, 87, 207, 0.401);
+
 }
 
