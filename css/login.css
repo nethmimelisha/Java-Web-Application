@@ -114,7 +114,7 @@ form.sign-up-form{
 }
 
 .btn:hover{
-    background-color: #081ee4;
+    background-color: #138122;
 }
 .social-text{
     padding: .7rem 0;
@@ -142,7 +142,7 @@ form.sign-up-form{
 }
 .social-icon:hover{
     color: rgba(35, 180, 180, 0.496);
-    border-color: rgb(47, 87, 207);
+    border-color: rgb(27, 176, 62);
 
 }
 
