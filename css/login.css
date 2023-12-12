@@ -56,11 +56,11 @@ form{
     grid-row: 1 / 2;
 }
 
-form.sign-in-form{
+form.sign-ip-form{
     z-index: 2;
 }
 
-form.-sign-up-form{
+form.sign-up-form{
     z-index: 1;
     opacity: 0;
 }
@@ -114,7 +114,7 @@ form.-sign-up-form{
 }
 
 .btn:hover{
-    background-color: #08e455;
+    background-color: #081ee4;
 }
 .social-text{
     padding: .7rem 0;
@@ -142,7 +142,7 @@ form.-sign-up-form{
 }
 .social-icon:hover{
     color: rgba(35, 180, 180, 0.496);
-    border-color: rgba(47, 87, 207, 0.401);
+    border-color: rgb(47, 87, 207);
 
 }
 
