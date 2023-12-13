@@ -18,3 +18,4 @@ function search() {
 
 // Call the animation function
 animateLoginSignUp();
+
