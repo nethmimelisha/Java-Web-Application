@@ -9,7 +9,7 @@ body {
     margin: auto;
     text-align: center;
     padding-top: 10px;
-    transition: transform 5s;
+    transition: transform .5s;
 }
 svg{
     width: 30px;
@@ -72,13 +72,13 @@ header .icon-cart span{
     background-color: #353432;
     color: #ffffff;
     position: fixed;
-    inset:0 -400px 0 auto;
+    inset: 0 -400px 0 auto;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
-    transition:transform .5s;
+    transition: .5s;
 }
 body.showCart .cartTab{
-    inset:0 0 0 auto; 
+    inset: 0 0 0 auto; 
 }
 body.showCart .container{
     transform: translateX(-250px);
@@ -93,7 +93,7 @@ body.showCart .container{
     grid-template-columns: repeat(2, 1fr);
 }
 .cartTab .btn button{
-    background-color: #297c0d61;
+    background-color: #297c0d98;
     border: none;
     font-family: Poppins;
     font-weight: 500;
@@ -116,17 +116,17 @@ body.showCart .container{
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-color: #66ff00;
-    color: #ffffff;
+    background-color: #eee;
+    color: #555;
     border-radius: 50%;
     cursor: pointer;
 }
 .listCart .quantity span:nth-child(2){
     background-color: transparent;
-    color: #0009;   
+    color: #eee;   
 }
 .listCart .item:nth-child(even){
-    background-color: #66ff00;
+    background-color: #eee1;
 }
 .listCart{
     overflow: auto;
