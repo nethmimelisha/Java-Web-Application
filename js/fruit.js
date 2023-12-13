@@ -16,38 +16,38 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'PRODUCT NAME 1',
-        image: '1.PNG',
+        name: 'Pineapple',
+        image: 'pineapple.png',
         price: 120000
     },
     {
         id: 2,
-        name: 'PRODUCT NAME 2',
-        image: '2.PNG',
+        name: 'Watermelon',
+        image: 'watermelon.png',
         price: 120000
     },
     {
         id: 3,
-        name: 'PRODUCT NAME 3',
-        image: '3.PNG',
+        name: 'Avocado',
+        image: 'avocado.png',
         price: 220000
     },
     {
         id: 4,
-        name: 'PRODUCT NAME 4',
-        image: '4.PNG',
+        name: 'Strawberry',
+        image: 'strawberry.png',
         price: 123000
     },
     {
         id: 5,
-        name: 'PRODUCT NAME 5',
-        image: '5.PNG',
+        name: 'Pear',
+        image: 'pear.png',
         price: 320000
     },
     {
         id: 6,
-        name: 'PRODUCT NAME 6',
-        image: '6.PNG',
+        name: 'Orange',
+        image: 'orange.png',
         price: 120000
     }
 ];
@@ -57,7 +57,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="image/${value.image}">
+            <img src="images/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="image/${value.image}"/></div>
+                <div><img src="images/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
