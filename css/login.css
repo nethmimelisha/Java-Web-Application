@@ -27,6 +27,8 @@ body, input{
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
+    z-index: 6;
+    transition: 1.8 ease-in-out;
 
 }
 
@@ -46,6 +48,7 @@ body, input{
     width: 50%;
     display: grid;
     grid-template-columns: 1fr;
+    z-index: 5;
 }
 form{
     display: flex;
@@ -115,7 +118,7 @@ form.sign-up-form{
     outline: none;
     border-radius: 49px;
     cursor: pointer;
-    background-color: #a4d10eae;
+    background-color: #7cb342;
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
@@ -175,12 +178,16 @@ form.sign-up-form{
     align-items: flex-end;
     justify-content: space-around;
     text-align: center;
+    z-index: 7;
 }
 .left-panel{
+pointer-events: all;
 padding: 3rem 12% 2rem 12%;
+
 }
 
 .right-panel{
+    pointer-events: none;
     padding: 3rem 12%  2rem 17%;
 }
 
@@ -195,7 +202,7 @@ padding: 3rem 12% 2rem 12%;
     font-size: 1.5rem;
 }
 
-.panel p{
+.panel h4{
     font-size:0.95rem ;
     padding: 0.7rem 0;
 }
@@ -220,3 +227,10 @@ height: 80%;
 .right-panel .content,.right-panel .image{
     transform: translateX(800px);
 } 
+
+/* animation */
+
+.container.sign-up-mode:before{
+    transform: translate(100%,-50%);
+    right:52%;
+}
