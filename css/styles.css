@@ -319,6 +319,8 @@ background-color:#7cb342;}
     align-items: center;
     margin-top: 20px;
     transition: all ease 0.3s;
+    position: relative;
+    text-align: right;
 }
 .product-box .cart1-btn i{
     margin-right: 10px;
