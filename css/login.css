@@ -256,3 +256,12 @@ transition: 1.1s .4s ease-in-out;
 .container.sign-up-mode .signin-signup{
     left: 25%;
 }
+
+.container.sign-up-mode form.sign-in-form{
+    z-index: 1;
+    opacity: 0;
+}
+.container.sign-up-mode form.sign-up-form{
+    z-index: 2;
+    opacity: 1;
+}
