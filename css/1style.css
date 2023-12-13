@@ -66,7 +66,7 @@ header .icon-cart span{
     border: none;
     cursor: pointer;
 }
-/* .cartTab{
+ .cartTab{
     width: 400px;
     background-color: #66ff00;
     color: #ffffff;
@@ -98,7 +98,7 @@ cartTab h1{
 .cartTab .btn .close{
     background-color: #66ff00;
 }
-.cartTab .listCart .item{
+/* .cartTab .listCart .item{
     display:grid;
     grid-template-columns: 70px 150px 50px 1fr; 
     gap: 10px;
@@ -126,4 +126,4 @@ cartTab h1{
 }
 .listCart::webkit-scrollbar{
     width: 0;
-} */   
+} */    
