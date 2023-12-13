@@ -9,6 +9,7 @@ body {
     margin: auto;
     text-align: center;
     padding-top: 10px;
+    transition: transform 5s;
 }
 svg{
     width: 30px;
@@ -68,7 +69,7 @@ header .icon-cart span{
 }
  .cartTab{
     width: 400px;
-    background-color: #66ff00;
+    background-color: #353432;
     color: #ffffff;
     position: fixed;
     inset:0 -400px 0 auto;
@@ -79,7 +80,10 @@ header .icon-cart span{
 body.showCart .cartTab{
     inset:0 0 0 auto; 
 }
-cartTab h1{
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
     padding: 20px;
     margin: 0;
     font-weight: 300;
@@ -89,23 +93,26 @@ cartTab h1{
     grid-template-columns: repeat(2, 1fr);
 }
 .cartTab .btn button{
-    background-color: #66ff33;
+    background-color: #297c0d61;
     border: none;
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
 }
 .cartTab .btn .close{
-    background-color: #66ff00;
+    background-color: #eee;
 }
-/* .cartTab .listCart .item{
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.cartTab .listCart .item{
     display:grid;
     grid-template-columns: 70px 150px 50px 1fr; 
     gap: 10px;
     text-align: center;
     align-items: center;
 }
-.listCart.quantity span{
+ .listCart.quantity span{
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -126,4 +133,4 @@ cartTab h1{
 }
 .listCart::webkit-scrollbar{
     width: 0;
-} */    
+}   
