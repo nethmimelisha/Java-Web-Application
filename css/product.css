@@ -2,7 +2,7 @@ body{
     background-color: #E3E7E8;
     font-family: system-ui;
 }
-.container{
+.container1{
     width: 1000px;
     margin: auto;
     transition: 0.5s;
@@ -63,7 +63,7 @@ header .shopping img{
 .active .card{
     left: calc(100% - 500px);
 }
-.active .container{
+.active .container1{
    transform: translateX(-200px);
 }
 .card h1{
