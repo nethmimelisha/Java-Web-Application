@@ -129,12 +129,12 @@ form.sign-in-form {
 
 .social-icon:hover {
   color: #7cb342;
-  border-color: #7cb342;
+  border-color: #6aa52aaf;
 }
 
 .btn {
   width: 150px;
-  background-color: #7cb342;
+  background-color: #4c8312cc;
   border: none;
   outline: none;
   height: 49px;
@@ -168,7 +168,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #b4ee95 0%, #dce6d1 100%);
+  background-image: linear-gradient(-45deg, #66b03e91 0%, #73ae3386 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
