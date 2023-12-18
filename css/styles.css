@@ -116,7 +116,7 @@ background-color:#7cb342;}
     margin: 10px auto;
     position: relative;
     overflow: hidden;
-    background-image: url(../images/bg.png);
+    background-image: url(/images/bg.png);
     background-repeat: no-repeat;
     background-size: 1000px;
     background-position: bottom right;
